@@ -847,8 +847,7 @@ footer {
         font-size: 14px;
     }
 
-    .simbolos table img{
-        margin-left: 60px;
+   .simbolos table img{
         width: 130px;
     }
     
@@ -869,7 +868,6 @@ footer {
     
     .tabela tbody th{
         border: none;
-        
     }
     
     .simbolos tbody td{
@@ -880,8 +878,7 @@ footer {
 
     .tabela th, .tabela td {
         display: block;
-        width: 100%;
-        text-align: left;
+        border-radius: 30px;
     }
 
     .mobile{
