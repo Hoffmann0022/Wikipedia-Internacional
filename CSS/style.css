@@ -1,0 +1,1068 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease-in-out;
+}
+  
+  /* Estilos para o modo claro */
+.light-mode {
+    background-color: #ebe8e8; 
+    color: #000000; 
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ebe8e8; /* Cor do texto claro */
+    /* Adicione outras propriedades conforme necessário */
+}
+  
+main figure {
+    transform: translateY(20px);
+    transition: transform 1s ease-in-out;
+    opacity: 0;
+  }
+
+main figure.entrar {
+    transform: translateY(0);
+    opacity: 1;
+}
+  
+  
+
+/*cabeçalho*/
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    padding: 10px;
+    border-radius: 0 0 40px 40px;
+    transition: 0.4s;
+    position: fixed;
+    z-index: 99999999999;
+    width: 98.5%;
+    top: 0;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+header figure a {
+    display: flex;
+}
+
+.logo {
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+
+.logo_2 {
+    width: 60px;
+    margin-left: 30px;
+}
+
+.busca {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(1px 1px 1px #212121);
+    padding-left: 20px;
+}
+
+.busca:hover {
+    transform: scale(105%);
+    filter: drop-shadow(3px 4px 4px #212121);
+}
+
+
+.pesquisa {
+    margin-right: 100px;
+}
+
+.pesquisa button {
+    width: 70px;
+    height: 30px;
+    margin-left: 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(1px 1px 1px #212121);
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    transform: scale(110%);
+    filter: drop-shadow(3px 4px 4px #212121);
+}
+
+.conta{
+    margin-right: 30px;
+}
+
+.conta a{
+    color: black;
+    padding-left:20px ;
+    text-decoration: none;
+}
+
+.conta a:hover{
+    text-decoration: underline;
+}
+
+.fora{
+    background-color:#212121;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.dentro{
+    background-color:#ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: url(../IMG/sun-fill.svg);
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+/*estilo do menu lateral*/
+
+.menu-lateral{
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999;
+    width: 0vh;
+    text-align: left;
+    border-radius: 0px 50px 50px 0px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-lateral.abrir{
+    width: 30vh;
+}
+
+
+.menu-lateral.abrir ~ .overlay-menu{
+    display: block;
+}
+
+.menu-lateral figure{
+    text-align: right;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.menu-lateral nav{
+    margin-top: 50px;
+}
+
+.menu-lateral li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    padding: 6px 20px 6px 20px;
+    border-radius: 30px;
+}
+.menu-lateral li a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.menu-lateral li{
+    padding-left: 10px;
+    padding: 20px 0px 10px 7%;
+    list-style: none;
+}
+
+.overlay-menu{
+    background-color: #00000081;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999999;
+    display: none;
+}
+
+
+/*conteúdo*/
+
+.inicio{
+    margin-top: 130px;
+}
+ 
+h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+hr{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 2px;
+    border-radius: 5px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+}
+
+.inter_hover{
+    color: black;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    float: right;
+    margin: 20px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 20px;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+}
+
+.inter_hover th{
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.inter_hover thead th{
+    font-size: 20px;
+    
+}
+
+.inter_hover.closed tbody{
+    display: none;
+    
+}
+  
+ 
+.inter_hover.closed tr:first-child {
+    display: table-row;
+    
+}
+  
+.closed{
+    width: 250px;
+
+}
+
+p{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.poppe{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.poppe img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+figcaption{
+   padding: 20px;
+    
+}
+
+h2{
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.primeiros{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.primeiros img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+
+.rolo{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.rolo img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+ 
+.falcao{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.falcao img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.elias{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.elias img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.tafarel{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.tafarel img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.dunga{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.dunga img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.fernandao{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.fernandao img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.abel{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.abel img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.velho{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.velho img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.equador{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.equador img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.mobile{
+    display: none;
+}
+
+.simbolos table img{
+    margin: 20px;
+    width: 90px;
+}
+
+.simbolos table th{
+    padding: 10px;
+}
+
+.head{
+    color: black;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+}
+
+.tabela {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid gray;
+}
+
+.head{
+    border-radius: 30px;
+    border: 1px solid gray;
+    transform: translateY(-3px);
+}
+
+.tabela th{
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+
+.simbolos tbody td{
+    border-right: 1px solid #808080;
+}
+
+.simbolos .ultimo{
+    border-right:none;
+}
+
+
+ul li{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+}
+
+.saci{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-right: 60px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+    color: black;
+}
+
+.saci img{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.abaixo{
+    margin-top: 190px;
+}
+
+
+.tabela_2 img{
+    margin: 20px;
+}
+
+
+.primeiro{
+    color: black;
+    border-radius: 20px 20px 0 0;
+}
+
+.tabela_2 th{
+    color: black;
+    background-color: #cfcccc;
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+    padding: 10px;
+}
+
+.tabela_2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 22px 22px 30px 30px;
+    border: 1px solid gray;
+}
+
+
+.tabela_2 tbody td{
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+    padding: 20px;
+}
+
+.tabela_2 .ultimo{
+    border-right:none;
+}
+
+.tabela_2 .ultimo_2{
+    border-bottom:none;
+}
+
+#ultimo{
+    border-bottom:none;
+}
+
+.torcida{
+    display: grid;
+    place-items: center;
+    float: right;
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 300px;
+    color: black;
+}
+
+.torcida img{
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.popular{
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-left: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 300px;
+    color: black;
+}
+
+.popular img{
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+
+/*footer*/
+
+footer {
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: rgb(217, 217, 219);
+    background: linear-gradient(90deg, rgba(217, 217, 219, 1) 0%, rgba(168, 170, 170, 1) 100%);
+    padding: 20px;
+    border-radius: 40px 40px 0 0 ;
+    transition: 0.4s;
+    margin-top: 50px;
+    color: #000000;
+}
+
+/*RESPONSIVOOOOOOOOOO*/ 
+
+
+/*celular*/
+
+@media only screen and (max-width: 600px){
+
+    header{
+        font-size: 13px;
+        width: 93.5%;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .menu{
+        font-size: 20px;
+    }
+    .logo {
+       display: none;
+    }
+    
+    .logo_2 {
+        width: 30px;
+        margin: 0;
+    }
+    
+    .busca {
+        width:120px;
+        height: 20px;
+        padding-left: 10px;
+    }
+    .pesquisa{
+        margin-right: 10px;
+    }
+    
+    .pesquisa button {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .conta{
+        display: none;
+    }
+
+    .fora{
+        width: 40px;
+        height: 15px;
+    }
+    
+    .dentro{
+        width: 15px;
+        height: 15px;
+    }
+    .menu-lateral.abrir{
+        width: 35vh;
+    }
+    
+    .menu-lateral nav{
+        margin-top: 0px;
+    }
+
+    .inicio{
+        margin-top: 80px;
+        display: grid;
+        place-items: center;
+    }
+
+    .historia{
+        display: grid;
+        place-items: center;
+    }
+
+    .historia figure{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .simbolos{
+        display: grid;
+        place-items: center;
+    }
+
+    .simbolos figure{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .colorados{
+        display: grid;
+        place-items: center;
+    }
+
+    .colorados figure{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+    
+    h2{
+        font-size: 17px ;
+    }
+
+    .inter_hover{
+        width: 100px;
+    }
+    
+    .inter_hover th{
+        font-size: 13px;
+    }
+    .inter_hover td{
+        font-size: 13px;
+    }
+    
+    .inter_hover thead th{
+        font-size: 20px;
+    }
+      
+    .closed{
+        width: 200px;
+    }
+    
+    p{
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    .simbolos table img{
+        margin-left: 60px;
+        width: 130px;
+    }
+    
+    .tabela .ultimo{
+        border-right: 1px solid gray;
+    }
+
+    .tabela {
+        border:none;
+        width: 250px;
+    }
+    
+    .head{
+        border-radius: 30px;
+        border:none;
+        width: 250px;
+    }
+    
+    .tabela tbody th{
+        border: none;
+        
+    }
+    
+    .simbolos tbody td{
+        border-right: none;
+        border: 1px solid gray;
+        
+    }
+
+    .tabela th, .tabela td {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .head_{
+        display: none;
+    }
+
+    ul li{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .abaixo{
+        margin-top: 10px;
+    }
+
+    .tabela_2 img{
+        margin: 0px;
+    }
+    
+    .tabela_2 th{
+        padding: 10px;
+    }
+    
+    .tabela_2{
+        font-size: 10px;
+        width: 250px;
+    }
+    
+    .tabela_2 tbody td{
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+
+/*tablet*/
+
+@media only screen and (min-width: 601px) and (max-width: 1199px){
+    header{
+        font-size: 13px;
+        width: 97.5%;
+        border-radius: 0 0 30px 30px;
+    }
+    
+    .menu{
+        font-size: 20px;
+        padding-left: 2px;
+    }
+    .logo {
+       display: block;
+       margin-right: 20px;
+       width: 100px;
+    }
+    
+    .logo_2 {
+        width: 40px;
+        margin: 0;
+    }
+    
+    .busca {
+        width:150px;
+        height: 30px;
+        padding-left: 20px;
+    }
+    .pesquisa{
+        margin-right: 10px;
+    }
+    
+    .pesquisa button {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .pesquisa button i{
+        font-size: 15px;
+    }
+    .conta{
+        display: block;
+    }
+
+    .fora{
+        width: 40px;
+        height: 15px;
+    }
+    
+    .dentro{
+        width: 15px;
+        height: 15px;
+    }
+    .menu-lateral.abrir{
+        width: 35vh;
+    }
+    
+    .menu-lateral nav{
+        margin-top: 0px;
+    }
+
+    .inicio{
+        margin-top: 80px;
+        
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+    h2{
+        font-size: 17px ;
+    }
+
+    .inter_hover{
+        width: 250px;
+    }
+    
+    .inter_hover th{
+        font-size: 13px;
+    }
+    .inter_hover td{
+        font-size: 13px;
+    }
+    
+    .inter_hover thead th{
+        font-size: 20px;
+    }
+      
+    .closed{
+        width: 200px;
+    }
+    
+    p{
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 14px;
+    }
+
+
+    .simbolos table img{
+        margin: 5px;
+        width: 55px;
+    }
+    
+    .tabela {
+        font-size: 13px;
+    }
+    
+
+    ul li{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .abaixo{
+        margin-top: 150px;
+    }
+
+    .tabela_2 img{
+        margin: 0px;
+    }
+    
+    .tabela_2 th{
+        padding: 10px;
+    }
+    
+    .tabela_2{
+        font-size: 10px;
+        width: 650px;
+    }
+    
+    .tabela_2 tbody td{
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
